@@ -38,6 +38,6 @@ def getset_counter(request):
     doc = counter_ref.get()
     response = jsonify(doc.to_dict())
     headers = {
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': 'https:/siddharthmehta.in'
     }
     return (response, 200, headers)
